@@ -18,8 +18,8 @@ test_array_1 = [
     "Hello\r\nWorld",
     "  двойные   пробелы  "
 ]
-for word in test_array_1:
-    print(normalize(word))
+#for word in test_array_1:
+#    print(normalize(word))
 
 def tokenize(text: str) -> list[str]:
     words = re.findall(r"\w+(?:-\w+)*", text)
@@ -38,8 +38,11 @@ test_array_2 = [
 def count_freq(tokens: list[str]) -> dict[str, int]:
     freq = {}
     for word in tokens:
-        freq[word] = freq.get(word, 0) + 1
-    return freq
+        if word in freq:
+            freq[word] += 1
+        else:
+            freq[word] = 1
+    return dict(sorted(freq.items()))
 
 test_array_3 = [
     ["a","b","a","c","b","a"],
@@ -58,5 +61,5 @@ test_array_4 = [
     ["a","b","a","c","b","a"],
     ["bb","aa","bb","aa","cc"]
 ]
-#for token in test_array_3:
-#    print(top_n(count_freq(token)))
+#for token in test_array_4:
+#    print(top_n(count_freq(token), n=2))
