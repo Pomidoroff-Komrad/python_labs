@@ -1,0 +1,7 @@
+__pycache__/
+
+# ЛР4: в репозитории только исходные тексты, без результатов запусков.
+/data/lab04/*
+!/data/lab04/a.txt
+!/data/lab04/b.txt
+!/data/lab04/input.txt
