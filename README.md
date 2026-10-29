@@ -4,3 +4,4 @@
 - [ЛР2 — Коллекции и матрицы](src/lab02/README.md)
 - [ЛР3 — Тексты и частоты слов](src/lab03/README.md)
 - [ЛР4 — Файлы: TXT/CSV и отчёты по текстовой статистике](src/lab04/README.md)
+- [ЛР5 — JSON и конвертации](src/lab05/README.md)
